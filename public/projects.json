@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "name": "MediCamp Website",
+    "image": "https://i.ibb.co.com/d4f3yvT2/MediCamp.png",
+    "description": "MediCamp is a Medical Camp Management System (MCMS) built with the MERN stack. It is designed to help organizers and participants seamlessly manage medical camps. The platform provides tools for registration, payment, feedback collection, and detailed camp analytics, ensuring a smooth and efficient experience for all users.",
+    "technologies": [
+      "React",
+      "TailwindCSS",
+      "DaisyUI",
+      "TanStack Query",
+      "Axios",
+      "React Hook Form",
+      "Recharts",
+      "Node.js",
+      "MongoDB",
+      "Express.js",
+      "Firebase",
+      "JWT",
+      "Stripe",
+      "SweetAlert2"
+    ],
+    "liveLink": "https://medi-camp-435d0.web.app",
+    "githubLink": "https://github.com/Purnendu-sarkar/medi-camp-pro?tab=readme-ov-file",
+    "challenges": "Managing complex state and integrating payment gateways.",
+    "futurePlans": "Adding AI-based product recommendations."
+  },
+  {
+    "id": 2,
+    "name": "Volunteer Network Website",
+    "image": "https://i.ibb.co.com/n8VtHdvc/Volunteer.png",
+    "description": "Volunteer Connect allows users to create, manage, and participate in volunteer opportunities seamlessly. The platform focuses on ease of use, secure data handling, and responsive design.",
+    "technologies": [
+      "React",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Framer Motion",
+      "React Helmet Async",
+      "SweetAlert2",
+      "Node.js",
+      "MongoDB",
+      "Express.js",
+      "Firebase",
+      "JWT"
+    ],
+    "liveLink": "https://volunteer-connect-d5524.web.app",
+    "githubLink": "https://github.com/Purnendu-sarkar/volunteer-connect-clint",
+    "challenges": "Ensuring full responsiveness and accessibility.",
+    "futurePlans": "Integrating a blog section."
+  },
+  {
+    "id": 3,
+    "name": "Chill Gamer Website",
+    "image": "https://i.ibb.co.com/Y70BVnjx/Chill-Gamer.png",
+    "description": "Chill Gamer is a user-friendly platform where users can explore, share, and discover game reviews. The application allows users to log in, add reviews, explore existing reviews, and manage their game watchlist. It also includes user authentication, review management, and personalized features like adding games to a watchlist.",
+    "technologies": [
+      "React",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Express",
+      "Node.js",
+      "MongoDB",
+      "Firebase"
+    ],
+    "liveLink": "https://chill-game-3f796.web.app",
+    "githubLink": "https://github.com/Purnendu-sarkar/chill-gamer-clint",
+    "challenges": "Implementing real-time updates efficiently.",
+    "futurePlans": "Adding voice and video chat features."
+  }
+]
