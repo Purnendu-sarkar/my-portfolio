@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-50-50 text-white fixed w-full z-10 shadow-md">
+    <nav className="text-white fixed w-full z-10 shadow-lg">
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo and Name */}
         <Link to="/" className="text-2xl font-bold flex items-center">
@@ -50,7 +50,7 @@ const Navbar = () => {
         <a
           href="/resume.pdf"
           download
-          className="hidden md:block bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+          className="hidden md:block bg-purple-500 px-4 py-2 rounded-lg hover:bg-blue-700 transition"
         >
           Download Resume
         </a>

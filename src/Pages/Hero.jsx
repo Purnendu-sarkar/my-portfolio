@@ -5,8 +5,56 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <section className="bg-gray-900 px-6 lg:px-16 py-20">
-      <div className="container mx-auto text-white min-h-screen flex flex-col lg:flex-row items-center justify-between gap-12">
+      <div className="container mx-auto text-white min-h-screen flex flex-col lg:flex-row-reverse items-center justify-between gap-12">
         {/* Left Content */}
+        <div className="lg:w-1/2 flex justify-center items-center relative mt-10 lg:mt-0">
+          {/* Profile Image */}
+          <motion.div
+            className="relative z-10"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <img
+              src={Profile}
+              alt="Purnendu"
+              className="w-48 md:w-64 h-48 md:h-64 rounded-full shadow-xl border-4 border-purple-500"
+            />
+          </motion.div>
+
+          {/* Floating Cards */}
+          <motion.div
+            className="absolute hidden lg:block -top-6 left-[140px] bg-purple-700 text-white p-4 rounded-lg shadow-lg text-center"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          >
+            <h3 className="text-lg md:text-xl font-bold">100+</h3>
+            <p className="text-sm md:text-base">Satisfied Clients</p>
+          </motion.div>
+
+          <motion.div
+            className="absolute hidden lg:block top-10 right-10 lg:right-20 bg-purple-700 text-white p-4 rounded-lg shadow-lg text-center"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.7 }}
+          >
+            <h3 className="text-lg md:text-xl font-bold">50+</h3>
+            <p className="text-sm md:text-base">Projects Completed</p>
+          </motion.div>
+
+          <motion.div
+            className="absolute hidden lg:block -bottom-[80px] left-[200px] bg-purple-700 text-white p-4 rounded-lg shadow-lg text-center"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.9 }}
+          >
+            <h3 className="text-lg md:text-xl font-bold">5+</h3>
+            <p className="text-sm md:text-base">Months Experience</p>
+          </motion.div>
+        </div>
+
+        {/* Right Content */}
         <div className="lg:w-1/2 text-center lg:text-left space-y-6">
           {/* Welcome Text */}
           <motion.div
@@ -51,7 +99,7 @@ const Hero = () => {
               Download Resume
             </a>
             <a
-              href="#contact"
+              href="/contact"
               className="border-2 border-purple-500 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-purple-500 hover:text-white transition shadow-md"
             >
               Contact Me
@@ -93,54 +141,6 @@ const Hero = () => {
             >
               <FaFacebook className="text-3xl hover:text-purple-400 transition" />
             </a>
-          </motion.div>
-        </div>
-
-        {/* Right Content */}
-        <div className="lg:w-1/2 flex justify-center items-center relative mt-10 lg:mt-0">
-          {/* Profile Image */}
-          <motion.div
-            className="relative z-10"
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            <img
-              src={Profile}
-              alt="Purnendu"
-              className="w-48 md:w-64 h-48 md:h-64 rounded-full shadow-xl border-4 border-purple-500"
-            />
-          </motion.div>
-
-          {/* Floating Cards */}
-          <motion.div
-            className="absolute -top-10 -left-10 lg:-left-20 bg-purple-700 text-white p-4 rounded-lg shadow-lg text-center"
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-          >
-            <h3 className="text-lg md:text-xl font-bold">100+</h3>
-            <p className="text-sm md:text-base">Satisfied Clients</p>
-          </motion.div>
-
-          <motion.div
-            className="absolute top-10 right-10 lg:right-20 bg-purple-700 text-white p-4 rounded-lg shadow-lg text-center"
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.7 }}
-          >
-            <h3 className="text-lg md:text-xl font-bold">50+</h3>
-            <p className="text-sm md:text-base">Projects Completed</p>
-          </motion.div>
-
-          <motion.div
-            className="absolute -bottom-[100px] bg-purple-700 text-white p-4 rounded-lg shadow-lg text-center"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.9 }}
-          >
-            <h3 className="text-lg md:text-xl font-bold">5+</h3>
-            <p className="text-sm md:text-base">Years Experience</p>
           </motion.div>
         </div>
       </div>
