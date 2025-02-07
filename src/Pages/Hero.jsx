@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
 import Profile from "../assets/profile.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router";
 
 const Hero = () => {
   return (
@@ -98,12 +99,14 @@ const Hero = () => {
             >
               Download Resume
             </a>
-            <a
-              href="/contact"
-              className="border-2 border-purple-500 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-purple-500 hover:text-white transition shadow-md"
-            >
-              Contact Me
-            </a>
+            <Link to={"/contact"}>
+              <button
+                href="contact"
+                className="border-2 border-purple-500 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-purple-500 hover:text-white transition shadow-md"
+              >
+                Contact Me
+              </button>
+            </Link>
           </motion.div>
 
           {/* Social Links */}
