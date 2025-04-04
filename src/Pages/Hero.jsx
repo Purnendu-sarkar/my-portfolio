@@ -40,8 +40,8 @@ const Hero = () => {
     <section className="relative bg-gray-900 px-6 lg:px-16 py-20 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="w-72 h-72 bg-purple-500 opacity-30 rounded-full absolute top-10 left-10 blur-3xl"></div>
-        <div className="w-96 h-96 bg-blue-500 opacity-20 rounded-full absolute bottom-10 right-10 blur-3xl"></div>
+       <div className="w-72 h-72 bg-purple-500 opacity-30 rounded-full absolute top-10 left-10 blur-3xl"></div>
+       <div className="w-96 h-96 bg-blue-500 opacity-20 rounded-full absolute bottom-10 right-10 blur-3xl"></div>
       </div>
 
       <div className="container mx-auto text-white min-h-screen flex flex-col lg:flex-row-reverse items-center justify-between gap-12 relative z-10">
@@ -97,7 +97,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1 }}
           >
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/1f0d0YCMfYgt9LDX8DUj1BLt0lABWfEzD/view?usp=sharing"
               download
               className="bg-gradient-to-r from-purple-500 to-blue-500 px-6 py-3 rounded-lg text-lg font-semibold hover:opacity-80 transition shadow-md"
             >

@@ -48,7 +48,7 @@ const Navbar = () => {
 
         {/* Resume Download Button */}
         <a
-          href="/resume.pdf"
+          href="https://drive.google.com/file/d/1f0d0YCMfYgt9LDX8DUj1BLt0lABWfEzD/view?usp=sharing"
           download
           className="hidden md:block bg-purple-500 px-4 py-2 rounded-lg hover:bg-blue-700 transition"
         >
